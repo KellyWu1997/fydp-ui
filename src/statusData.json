@@ -1,0 +1,144 @@
+[
+    {
+        "hostName": "Host 1",
+        "chartData": [
+            {"title": "Occupied", "value": 60, "color": "#88bdbc"},
+            {"title": "Available", "value": 40, "color": "#FFE4B5"}
+        ]
+    },
+    {
+        "hostName": "Host 2",
+        "chartData": [
+            {"title": "Occupied", "value": 80, "color": "#88bdbc"},
+            {"title": "Available", "value": 20, "color": "#FFE4B5"}
+        ]
+    },
+    {
+        "hostName": "Host 3",
+        "chartData": [
+            {"title": "Occupied", "value": 90, "color": "#88bdbc"},
+            {"title": "Available", "value": 10, "color": "#FFE4B5"}
+        ]
+    },
+    {
+        "hostName": "Host 4",
+        "chartData": [
+            {"title": "Occupied", "value": 95, "color": "#88bdbc"},
+            {"title": "Available", "value": 5, "color": "#FFE4B5"}
+        ]
+    },
+    {
+        "hostName": "Host 5",
+        "chartData": [
+            {"title": "Occupied", "value": 40, "color": "#88bdbc"},
+            {"title": "Available", "value": 60, "color": "#FFE4B5"}
+        ]
+    },
+    {
+        "hostName": "Host 6",
+        "chartData": [
+            {"title": "Occupied", "value": 50, "color": "#88bdbc"},
+            {"title": "Available", "value": 50, "color": "#FFE4B5"}
+        ]
+    },
+    {
+        "hostName": "Host 7",
+        "chartData": [
+            {"title": "Occupied", "value": 60, "color": "#88bdbc"},
+            {"title": "Available", "value": 40, "color": "#FFE4B5"}
+        ]
+    },
+    {
+        "hostName": "Host 8",
+        "chartData": [
+            {"title": "Occupied", "value": 70, "color": "#88bdbc"},
+            {"title": "Available", "value": 30, "color": "#FFE4B5"}
+        ]
+    },
+    {
+        "hostName": "Host 9",
+        "chartData": [
+            {"title": "Occupied", "value": 10, "color": "#88bdbc"},
+            {"title": "Available", "value": 90, "color": "#FFE4B5"}
+        ]
+    },
+    {
+        "hostName": "Host 10",
+        "chartData": [
+            {"title": "Occupied", "value": 95, "color": "#88bdbc"},
+            {"title": "Available", "value": 5, "color": "#FFE4B5"}
+        ]
+    },
+    {
+        "hostName": "Host 11",
+        "chartData": [
+            {"title": "Occupied", "value": 40, "color": "#88bdbc"},
+            {"title": "Available", "value": 60, "color": "#FFE4B5"}
+        ]
+    },
+    {
+        "hostName": "Host 12",
+        "chartData": [
+            {"title": "Occupied", "value": 50, "color": "#88bdbc"},
+            {"title": "Available", "value": 50, "color": "#FFE4B5"}
+        ]
+    },
+    {
+        "hostName": "Host 13",
+        "chartData": [
+            {"title": "Occupied", "value": 60, "color": "#88bdbc"},
+            {"title": "Available", "value": 40, "color": "#FFE4B5"}
+        ]
+    },
+    {
+        "hostName": "Host 14",
+        "chartData": [
+            {"title": "Occupied", "value": 20, "color": "#88bdbc"},
+            {"title": "Available", "value": 80, "color": "#FFE4B5"}
+        ]
+    },
+    {
+        "hostName": "Host 15",
+        "chartData": [
+            {"title": "Occupied", "value": 10, "color": "#88bdbc"},
+            {"title": "Available", "value": 90, "color": "#FFE4B5"}
+        ]
+    },
+    {
+        "hostName": "Host 16",
+        "chartData": [
+            {"title": "Occupied", "value": 95, "color": "#88bdbc"},
+            {"title": "Available", "value": 5, "color": "#FFE4B5"}
+        ]
+    },
+    {
+        "hostName": "Host 17",
+        "chartData": [
+            {"title": "Occupied", "value": 40, "color": "#88bdbc"},
+            {"title": "Available", "value": 60, "color": "#FFE4B5"}
+        ]
+    },
+    {
+        "hostName": "Host 18",
+        "chartData": [
+            {"title": "Occupied", "value": 50, "color": "#88bdbc"},
+            {"title": "Available", "value": 50, "color": "#FFE4B5"}
+        ]
+    },
+    {
+        "hostName": "Host 19",
+        "chartData": [
+            {"title": "Occupied", "value": 40, "color": "#88bdbc"},
+            {"title": "Available", "value": 60, "color": "#FFE4B5"}
+        ]
+    },
+    {
+        "hostName": "Host 20",
+        "chartData": [
+            {"title": "Occupied", "value": 50, "color": "#88bdbc"},
+            {"title": "Available", "value": 50, "color": "#FFE4B5"}
+        ]
+    }
+]
+    
+

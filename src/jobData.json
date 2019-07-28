@@ -1,0 +1,61 @@
+{
+    "current": [
+        {
+            "Job ID": 1,
+            "Job Title": "job 1",
+            "Submitter": "submitter 1",
+            "Executing On": "host 12"
+        },
+        {
+            "Job ID": 2,
+            "Job Title": "job 2",
+            "Submitter": "submitter 1",
+            "Executing On": "host 5"
+        },
+        {
+            "Job ID": 3,
+            "Job Title": "job 3",
+            "Submitter": "submitter 1",
+            "ExecutingOn": "host 7"
+        }, 
+        {
+            "Job ID": 4,
+            "Job Title": "job 4",
+            "Submitter": "submitter 1",
+            "Executing On": "host 11"
+        }
+    ],
+    "waiting": [
+        {
+            "Job ID": 5,
+            "Job Title": "job 5",
+            "Submitter": "submitter 1"
+        },
+        {
+            "Job ID": 6,
+            "Job Title": "job 6",
+            "Submitter": "submitter 1"
+        },
+        {
+            "Job ID": 7,
+            "Job Title": "job 7",
+            "Submitter": "submitter 1"
+        }
+
+    ],
+    "finished": [
+        {
+            "Job ID": 8,
+            "Job Title": "job 8",
+            "Submitter": "submitter 1",
+            "Executed On": "host 3",
+            "Status": "successful"
+        },{
+            "Job ID": 9,
+            "Job Title": "job 9",
+            "Submitter": "submitter 1",
+            "Executed On": "host 3",
+            "Status": "fail"
+        }
+    ]
+}

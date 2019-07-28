@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bahianita&display=swap');
 .App {
-  text-align: center;
+  height: 100%;
 }
 
 .App-logo {
@@ -30,4 +32,38 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.sidebar {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  left: 0;
+  background-color: #45A29E;
+  list-style: none;
+  padding-left: 10px;
+}
+
+.navItem {
+  margin: 20px 30px 10px 40px;
+  color: white;
+  cursor: pointer;
+  padding-bottom: 3px;
+  font-family: 'lato';
+  font-size: 20px;
+}
+
+.activeTab {
+  color: #FFE4B5;
+  border-bottom: 1px dashed #FFE4B5;
+}
+
+.navItem:hover {
+  border-bottom: 1px dashed #FFE4B5;
+}
+
+.rightContainer {
+  height: 100%;
+  float: right;
+  width: 80%;
 }
