@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import HostStatusItem from './HostStatusItem';
+import HostStatusChart from './HostStatusChart';
 
 let statusData = require('../statusData.json');
 let totalPageNum = Math.ceil(statusData.length / 6);
@@ -89,6 +90,7 @@ class DataPagination extends Component {
 
         return (
             <Container>
+                <HostStatusChart></HostStatusChart>
                 {
                     data.map((host)=> {
                         return (

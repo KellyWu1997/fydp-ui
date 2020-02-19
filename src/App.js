@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 import logo from './logo.svg';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -39,9 +39,18 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-       activePage: "Administrator"
+       activePage: "Administrator",
+       fetched: null
     };
   } 
+  
+  componentDidMount() {
+    fetch('http://34.94.123.16:8080/')
+    .then(res => res.json())
+    .then((data) => {
+       console.log(data)
+    })
+  }
 
   render() {
     const navList = ["Host Status", "Administrator"]
@@ -51,6 +60,9 @@ class App extends Component {
 
       <Tabs>
         
+          <div>
+            {this.state.fetched}
+          </div>
 
           <TabList className="sidebar">
 
