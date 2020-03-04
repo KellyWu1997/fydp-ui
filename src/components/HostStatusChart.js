@@ -12,20 +12,7 @@ let statusData = require('../statusData.json');
 class HostStatusChart extends Component {
     constructor() {
 		super();
-		this.state = {
-            currentData: statusData[0]
-        };
 		this.toggleDataSeries = this.toggleDataSeries.bind(this);
-    }
-	
-	componentDidMount() {
-        setInterval(() => {
-            let random = Math.floor(Math.random() * statusData.length);
-            let data = statusData[random];
-            this.setState({
-                currentData: data
-            })
-        }, 2000)
     }
 	
 	
@@ -40,7 +27,9 @@ class HostStatusChart extends Component {
     }
     
 	render() {
-		let { currentData } = this.state;
+		let random = this.props.random;
+		let currentData = statusData[random];
+		
 		let dataPoints_occupied = [];
 		let dataPoints_current= [];
 		let dataPoints_available = [];

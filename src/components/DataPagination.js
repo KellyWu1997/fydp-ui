@@ -12,24 +12,12 @@ let statusData = require('../statusData.json');
 class DataPagination extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            currentData: statusData[0]
-        };
-    }
-
-    componentDidMount() {
-        setInterval(() => {
-            let random = Math.floor(Math.random() * statusData.length);
-            let data = statusData[random];
-            this.setState({
-                currentData: data
-            })
-        }, 2000)
     }
     
 
     render() {
-        let { currentData } = this.state;
+        let random = this.props.random;
+		let currentData = statusData[random];
 
         return (
             <div className="DataPagination">

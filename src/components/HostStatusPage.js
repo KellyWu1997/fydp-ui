@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import DataPagination from './DataPagination.js';
 import HostStatusChart from './HostStatusChart';
 
+let statusData = require('../statusData.json');
+
 const PageContainer = styled.div`
     padding: 60px;
     font-family: 'lato';
@@ -38,6 +40,19 @@ const LegendText = styled.p`
 class HostStatusPage extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            random: 0
+        }
+    }
+
+    componentDidMount() {
+        let rand = 0;
+        setInterval(() => {
+            rand = (rand + 1) % statusData.length;
+            this.setState({
+                random: rand
+            })
+        }, 2000)
     }
 
     render() {
@@ -45,8 +60,8 @@ class HostStatusPage extends Component {
             <React.Fragment>
                 <PageContainer>
                     <Title><FontAwesomeIcon icon="angle-double-right"/> Host Status</Title>
-                    <HostStatusChart></HostStatusChart>
-                    <DataPagination />
+                    <HostStatusChart random={this.state.random} />
+                    <DataPagination random={this.state.random}/>
                 </PageContainer>
                 
             </React.Fragment>
