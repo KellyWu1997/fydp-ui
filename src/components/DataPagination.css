@@ -1,0 +1,16 @@
+.DataPagination {
+    margin-top: 10px;
+    height: 700px;
+}
+
+.DataPagination ul {
+    display: block;
+    list-style: none;
+    padding-left: 0;
+    width: 90%;
+}
+
+.DataPagination li {
+    margin-bottom: 20px;
+}
+

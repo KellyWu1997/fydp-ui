@@ -1,144 +1,145 @@
 [
-    {
-        "hostName": "Host 1",
-        "chartData": [
-            {"title": "Occupied", "value": 60, "color": "#88bdbc"},
-            {"title": "Available", "value": 40, "color": "#FFE4B5"}
-        ]
-    },
-    {
-        "hostName": "Host 2",
-        "chartData": [
-            {"title": "Occupied", "value": 80, "color": "#88bdbc"},
-            {"title": "Available", "value": 20, "color": "#FFE4B5"}
-        ]
-    },
-    {
-        "hostName": "Host 3",
-        "chartData": [
-            {"title": "Occupied", "value": 90, "color": "#88bdbc"},
-            {"title": "Available", "value": 10, "color": "#FFE4B5"}
-        ]
-    },
-    {
-        "hostName": "Host 4",
-        "chartData": [
-            {"title": "Occupied", "value": 95, "color": "#88bdbc"},
-            {"title": "Available", "value": 5, "color": "#FFE4B5"}
-        ]
-    },
-    {
-        "hostName": "Host 5",
-        "chartData": [
-            {"title": "Occupied", "value": 40, "color": "#88bdbc"},
-            {"title": "Available", "value": 60, "color": "#FFE4B5"}
-        ]
-    },
-    {
-        "hostName": "Host 6",
-        "chartData": [
-            {"title": "Occupied", "value": 50, "color": "#88bdbc"},
-            {"title": "Available", "value": 50, "color": "#FFE4B5"}
-        ]
-    },
-    {
-        "hostName": "Host 7",
-        "chartData": [
-            {"title": "Occupied", "value": 60, "color": "#88bdbc"},
-            {"title": "Available", "value": 40, "color": "#FFE4B5"}
-        ]
-    },
-    {
-        "hostName": "Host 8",
-        "chartData": [
-            {"title": "Occupied", "value": 70, "color": "#88bdbc"},
-            {"title": "Available", "value": 30, "color": "#FFE4B5"}
-        ]
-    },
-    {
-        "hostName": "Host 9",
-        "chartData": [
-            {"title": "Occupied", "value": 10, "color": "#88bdbc"},
-            {"title": "Available", "value": 90, "color": "#FFE4B5"}
-        ]
-    },
-    {
-        "hostName": "Host 10",
-        "chartData": [
-            {"title": "Occupied", "value": 95, "color": "#88bdbc"},
-            {"title": "Available", "value": 5, "color": "#FFE4B5"}
-        ]
-    },
-    {
-        "hostName": "Host 11",
-        "chartData": [
-            {"title": "Occupied", "value": 40, "color": "#88bdbc"},
-            {"title": "Available", "value": 60, "color": "#FFE4B5"}
-        ]
-    },
-    {
-        "hostName": "Host 12",
-        "chartData": [
-            {"title": "Occupied", "value": 50, "color": "#88bdbc"},
-            {"title": "Available", "value": 50, "color": "#FFE4B5"}
-        ]
-    },
-    {
-        "hostName": "Host 13",
-        "chartData": [
-            {"title": "Occupied", "value": 60, "color": "#88bdbc"},
-            {"title": "Available", "value": 40, "color": "#FFE4B5"}
-        ]
-    },
-    {
-        "hostName": "Host 14",
-        "chartData": [
-            {"title": "Occupied", "value": 20, "color": "#88bdbc"},
-            {"title": "Available", "value": 80, "color": "#FFE4B5"}
-        ]
-    },
-    {
-        "hostName": "Host 15",
-        "chartData": [
-            {"title": "Occupied", "value": 10, "color": "#88bdbc"},
-            {"title": "Available", "value": 90, "color": "#FFE4B5"}
-        ]
-    },
-    {
-        "hostName": "Host 16",
-        "chartData": [
-            {"title": "Occupied", "value": 95, "color": "#88bdbc"},
-            {"title": "Available", "value": 5, "color": "#FFE4B5"}
-        ]
-    },
-    {
-        "hostName": "Host 17",
-        "chartData": [
-            {"title": "Occupied", "value": 40, "color": "#88bdbc"},
-            {"title": "Available", "value": 60, "color": "#FFE4B5"}
-        ]
-    },
-    {
-        "hostName": "Host 18",
-        "chartData": [
-            {"title": "Occupied", "value": 50, "color": "#88bdbc"},
-            {"title": "Available", "value": 50, "color": "#FFE4B5"}
-        ]
-    },
-    {
-        "hostName": "Host 19",
-        "chartData": [
-            {"title": "Occupied", "value": 40, "color": "#88bdbc"},
-            {"title": "Available", "value": 60, "color": "#FFE4B5"}
-        ]
-    },
-    {
-        "hostName": "Host 20",
-        "chartData": [
-            {"title": "Occupied", "value": 50, "color": "#88bdbc"},
-            {"title": "Available", "value": 50, "color": "#FFE4B5"}
-        ]
-    }
+    [
+        {
+            "id": "1",
+            "host_name": "some host",
+            "status": "ok",
+            "max_jobs": "90",
+            "num_jobs": "70",
+            "num_jobs_running": "13",
+            "num_cpu": "2"
+        },
+        {
+            "id": "2",
+            "host_name": "some host",
+            "status": "ok",
+            "max_jobs": "90",
+            "num_jobs": "60",
+            "num_jobs_running": "33",
+            "num_cpu": "2"
+        },
+        {
+            "id": "3",
+            "host_name": "some host",
+            "status": "unavail",
+            "max_jobs": "90",
+            "num_jobs": "32",
+            "num_jobs_running": "3",
+            "num_cpu": "2"
+        },
+        {
+            "id": "4",
+            "host_name": "some host",
+            "status": "closed",
+            "max_jobs": "90",
+            "num_jobs": "10",
+            "num_jobs_running": "53",
+            "num_cpu": "2"
+        },
+        {
+            "id": "5",
+            "host_name": "some host",
+            "status": "unavail",
+            "max_jobs": "90",
+            "num_jobs": "90",
+            "num_jobs_running": "83",
+            "num_cpu": "2"
+        }
+    ],
+    [
+        {
+            "id": "1",
+            "host_name": "some host",
+            "status": "ok",
+            "max_jobs": "90",
+            "num_jobs": "80",
+            "num_jobs_running": "13",
+            "num_cpu": "2"
+        },
+        {
+            "id": "2",
+            "host_name": "some host",
+            "status": "ok",
+            "max_jobs": "90",
+            "num_jobs": "40",
+            "num_jobs_running": "33",
+            "num_cpu": "2"
+        },
+        {
+            "id": "3",
+            "host_name": "some host",
+            "status": "unavail",
+            "max_jobs": "90",
+            "num_jobs": "22",
+            "num_jobs_running": "3",
+            "num_cpu": "2"
+        },
+        {
+            "id": "4",
+            "host_name": "some host",
+            "status": "closed",
+            "max_jobs": "90",
+            "num_jobs": "60",
+            "num_jobs_running": "53",
+            "num_cpu": "2"
+        },
+        {
+            "id": "5",
+            "host_name": "some host",
+            "status": "unavail",
+            "max_jobs": "90",
+            "num_jobs": "90",
+            "num_jobs_running": "83",
+            "num_cpu": "2"
+        }
+    ],
+    [
+        {
+            "id": "1",
+            "host_name": "some host",
+            "status": "ok",
+            "max_jobs": "90",
+            "num_jobs": "54",
+            "num_jobs_running": "13",
+            "num_cpu": "2"
+        },
+        {
+            "id": "2",
+            "host_name": "some host",
+            "status": "ok",
+            "max_jobs": "90",
+            "num_jobs": "43",
+            "num_jobs_running": "33",
+            "num_cpu": "2"
+        },
+        {
+            "id": "3",
+            "host_name": "some host",
+            "status": "unavail",
+            "max_jobs": "90",
+            "num_jobs": "72",
+            "num_jobs_running": "3",
+            "num_cpu": "2"
+        },
+        {
+            "id": "4",
+            "host_name": "some host",
+            "status": "closed",
+            "max_jobs": "90",
+            "num_jobs": "9",
+            "num_jobs_running": "53",
+            "num_cpu": "2"
+        },
+        {
+            "id": "5",
+            "host_name": "some host",
+            "status": "unavail",
+            "max_jobs": "90",
+            "num_jobs": "20",
+            "num_jobs_running": "83",
+            "num_cpu": "2"
+        }
+    ]
 ]
     
 

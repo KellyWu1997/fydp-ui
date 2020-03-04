@@ -1,12 +1,34 @@
+import './JobTable.css';
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Table from 'react-bootstrap/Table';
+import DataTable, { createTheme } from 'react-data-table-component';
 
 let jsonData = require('../jobData.json');
 
 
-console.log(jsonData);
+const columns = [
+    {
+      name: 'Job ID',
+      selector: 'Job ID',
+      sortable: true,
+    },
+    {
+      name: 'Job Title',
+      selector: 'Job Title',
+      sortable: true,
+    },
+    {
+      name: 'Submitter',
+      selector: 'Submitter',
+      sortable: true,
+    },
+    {
+        name: 'Executing On',
+        selector: 'Executing On',
+        sortable: true,
+      },
+  ];
 
 const TableContainer = styled.div`
     font-family: 'lato';
@@ -18,7 +40,31 @@ const TableTitle = styled.div`
     color: #45A29E;
     margin-bottom: 20px;
 `
-
+const customStyles = {
+    rows: {
+      style: {
+        minHeight: '60px', 
+        fontSize: '20px'
+      }
+    },
+    headCells: {
+      style: {
+        paddingLeft: '8px', // override the cell padding for head cells
+        paddingRight: '8px',
+        fontSize: '20px'
+      },
+    },
+    cells: {
+      style: {
+        paddingLeft: '8px', // override the cell padding for data cells
+        paddingRight: '8px',
+        fontSize: '20px'
+      },
+    },
+    header: {
+        style: { display: 'none'}
+    }
+  };
 
 
 class JobTable extends Component {
@@ -28,49 +74,30 @@ class JobTable extends Component {
 
     render() {
         let dataSet = [];
+        let title;
         if (this.props.type === "current"){
            dataSet = jsonData.current;
+           title = "Current Executing";
         }
         else if (this.props.type === "waiting"){
            dataSet = jsonData.waiting;
+           title = "Waiting";
         }
         else if (this.props.type === "finished"){
            dataSet = jsonData.finished;
+           title = "Finished"
         } 
         return (
             <TableContainer>
                 <TableTitle>{this.props.tableTitle}</TableTitle>
-
-                <Table striped bordered hover>
-                    <thead>
-                        <tr>
-                            {
-                                Object.keys(dataSet[0]).map((key) => {
-                                    return( <th> {key} </th> )
-                                })
-                            }
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {
-                            dataSet.map((row) => {
-                                return (
-                                    <tr>
-                                        {
-                                            Object.keys(row).map((key) => {
-                                                return( <th> {row[key]} </th> )
-                                            })
-                                       }
-                                    </tr>
-                                )
-                                
-                            })
-                        }
-                      
-                    </tbody>
-                </Table>
-
-            </TableContainer>
+                <DataTable
+                    columns={columns}
+                    data={dataSet}
+                    defaultSortField="title"
+                    customStyles={customStyles}
+                    highlightOnHover={true}
+                />
+          </TableContainer>
         );
     }
 }

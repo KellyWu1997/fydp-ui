@@ -1,55 +1,42 @@
+import './HostStatusItem.css';
+
 import React, { Component } from 'react';
 import ReactSvgPieChart from "react-svg-piechart"
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
-const Container = styled.div`
-    display: inline-block;
-    margin: 15px;
-    width: 30%;
-    height: 350px;
-    background-color: #C5C6C7;
-    border-radius: 5px;
-`
-const Chart = styled.div`
-    width: 80%;
-    height: 80%;
-    margin: 20px auto;
-    margin-bottom: 0px;
-`
-
-const HostName = styled.p`
-    font-family: 'lato';
-    font-size: 20px;
-    color: #1F2833;
-    text-align: center;
-    margin-top: -10px;
-
-`
-
 class HostStatusItem extends Component {
     constructor(props) {
         super(props);
     }
-
-
-
+  
     render() {
+        let { data } = this.props;
+        let occupancy = data.num_jobs / data.max_jobs;
+        let itemColor = "#9bc4c3";
+
+        if (occupancy > 0.5) {
+            itemColor = "#45a29e";
+        } 
+        if (occupancy > 0.8) {
+            itemColor = "#056361";
+        }
+
         return (
-            <React.Fragment>
-                <Container>
-                    <Chart>
-                        <ReactSvgPieChart
-                            data={this.props.chart}
-                            strokeColor="#fff"
-                            // If you need expand on hover (or touch) effect
-                            expandOnHover               
-                        />
-                    </Chart>
-                    <HostName>{this.props.hostName}</HostName>
-                </Container>
-            </React.Fragment>
+            <div className="HostStatusItem" style={{backgroundColor: itemColor}}>
+                <div className="hostId">{data.id}</div>
+                <ul>
+                    <li>Host name: {data.host_name}</li>
+                    <li>Status: {data.status}</li>
+                    <li>Max jobs #: {data.max_jobs}</li>
+                    <li>Current jobs #: {data.num_jobs}</li>
+                </ul>
+                <ul>
+                    <li>Running jobs #: {data.num_jobs_running}</li>
+                    <li>CPU #: {data.num_cpu}</li>
+                </ul>
+            </div>
         );
     }
 }

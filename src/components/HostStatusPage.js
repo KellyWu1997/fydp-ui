@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import DataPagination from './DataPagination.js';
+import HostStatusChart from './HostStatusChart';
 
 const PageContainer = styled.div`
     padding: 60px;
@@ -44,14 +45,7 @@ class HostStatusPage extends Component {
             <React.Fragment>
                 <PageContainer>
                     <Title><FontAwesomeIcon icon="angle-double-right"/> Host Status</Title>
-                    <Legend>
-                        <LegendColor color="#88bdbc"></LegendColor>
-                        <LegendText>Occupied</LegendText>
-                    </Legend>
-                    <Legend>
-                        <LegendColor color="#FFE4B5"></LegendColor>
-                        <LegendText>Available</LegendText>
-                    </Legend>
+                    <HostStatusChart></HostStatusChart>
                     <DataPagination />
                 </PageContainer>
                 

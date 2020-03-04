@@ -16,7 +16,7 @@
             "Job ID": 3,
             "Job Title": "job 3",
             "Submitter": "submitter 1",
-            "ExecutingOn": "host 7"
+            "Executing On": "host 7"
         }, 
         {
             "Job ID": 4,
