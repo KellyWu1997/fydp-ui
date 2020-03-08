@@ -7,7 +7,7 @@ import DataTable, { createTheme } from 'react-data-table-component';
 let jsonData = require('../jobData.json');
 
 
-const columns = [
+const columnsOther = [
     {
       name: 'Job ID',
       selector: 'Job ID',
@@ -20,14 +20,52 @@ const columns = [
     },
     {
       name: 'Submitter',
-      selector: 'Submitter',
+      selector: 'Submitter ID',
       sortable: true,
     },
     {
         name: 'Executing On',
         selector: 'Executing On',
         sortable: true,
-      },
+    },
+    {
+      name: 'Usage',
+      selector: 'Usage',
+      sortable: true,
+    }
+  ];
+
+  const columnsFinished = [
+    {
+      name: 'Job ID',
+      selector: 'Job ID',
+      sortable: true,
+    },
+    {
+      name: 'Job Title',
+      selector: 'Job Title',
+      sortable: true,
+    },
+    {
+      name: 'Submitter',
+      selector: 'Submitter ID',
+      sortable: true,
+    },
+    {
+        name: 'Executed On',
+        selector: 'Executed On',
+        sortable: true,
+    },
+    {
+      name: 'Status',
+      selector: 'Status',
+      sortable: true,
+    },
+    {
+      name: 'Usage',
+      selector: 'Usage',
+      sortable: true,
+    }
   ];
 
 const TableContainer = styled.div`
@@ -75,17 +113,20 @@ class JobTable extends Component {
     render() {
         let dataSet = [];
         let title;
+        let columns = columnsOther;
         if (this.props.type === "current"){
            dataSet = jsonData.current;
+           
            title = "Current Executing";
         }
         else if (this.props.type === "waiting"){
-           dataSet = jsonData.waiting;
+          dataSet = jsonData.waiting;
            title = "Waiting";
         }
         else if (this.props.type === "finished"){
-           dataSet = jsonData.finished;
-           title = "Finished"
+          dataSet = jsonData.finished;
+           title = "Finished";
+           columns = columnsFinished;
         } 
         return (
             <TableContainer>
